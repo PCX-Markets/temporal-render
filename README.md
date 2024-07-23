@@ -1,12 +1,8 @@
-# Simple Temporal Setup on Render
-
-This is a template for running a simple version of Temporal on Render. This is not recommended for production beyond small use cases, as all 4 Temporal internal services (Frontend, Matching, History, and Worker) are being run out of one server, but the benefit is that setup is a lot simpler. For a more production-ready setup, see the [render-examples/temporal repo](https://github.com/render-examples/temporal).
+# PCX Temporal Setup on Render
 
 The deployment also includes an example Go app that interacts with the cluster. Fork this repo and click the button below to try it out!
 
 [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy)
-
-> ⚠️ Note: this blueprint spins up 4 server instances and 2 Postgres instances, all on Render's "Starter" plan, which (as of Feb 2022) will cost $42 if left running for a whole month. Remember to tear down your resources when just kicking the tires.
 
 This repo defines a [Render Blueprint](https://render.com/docs/blueprint-spec) with the following components:
 - Temporal cluster:
